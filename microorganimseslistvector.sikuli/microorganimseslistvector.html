@@ -73,42 +73,42 @@
 <span class="cmt">##                                                          ##</span>
 <span class="cmt">##    beginning of the program when the research is done    ##</span>
 <span class="cmt">##    and you find yourself in card index                   ##</span>
+<span class="cmt">## Setup resolution on 1024 x 768</span>
+
 numberOfSubjects = <span class="dig">170</span>
 onlyAtBeginningCount = <span class="dig">0</span>
-howMuchOfiemsToTake = <span class="dig">10</span>
+howMuchOfiemsToTake = <span class="dig">15</span>
 
 
 <span class="kw">for</span> i <span class="kw">in</span> range(numberOfSubjects):
     <span class="kw">if</span> onlyAtBeginningCount == <span class="dig">0</span>:
-        <span class="skw">click</span>(Pattern(<img src="1493852876083.png" />).targetOffset(<span class="dig">0</span>,<span class="dig">16</span>))<span class="cmt">#click on first part</span>
+        <span class="skw">click</span>(Pattern(<img src="1494677766513.png" />).targetOffset(<span class="dig">17</span>,<span class="dig">13</span>))<span class="cmt">#click on first part</span>
     <span class="kw">else</span>:
         <span class="skw">type</span>(Key.DOWN)<span class="cmt">#select next subject</span>
 
     onlyAtBeginningCount = <span class="dig">1</span>
-    <span class="skw">sleep</span>(<span class="dig">4</span>)<span class="cmt">#when you click on  </span>
-    <span class="skw">wait</span>(Pattern(<img src="1493908245377.png" />).targetOffset(-<span class="dig">118</span>,<span class="dig">250</span>), <span class="dig">30</span>*<span class="dig">60</span>)
-    <span class="skw">click</span>(Pattern(<img src="1493908245377.png" />).targetOffset(-<span class="dig">118</span>,<span class="dig">250</span>))<span class="cmt">#click on the image of the part with offset</span>
-
-    <span class="skw">wait</span>(<img src="1493853550186.png" />, <span class="dig">30</span>*<span class="dig">60</span>)<span class="cmt">#the button to appear can take a while, so wait till it appears</span>
-    <span class="skw">click</span>(<img src="1493853550186.png" />)<span class="cmt">#after you get button test</span>
-    <span class="skw">wait</span>(<img src="1493854280565.png" />, <span class="dig">30</span>*<span class="dig">60</span>)<span class="cmt">#the button to appear can take a while, so wait till it appears</span>
-
-    <span class="skw">click</span>(<img src="1493853595491.png" />) <span class="cmt">#click on button clear to clear all previeous selected subjects</span>
+    <span class="skw">sleep</span>(<span class="dig">4</span>)<span class="cmt">#when you click on </span>
+    <span class="skw">wait</span>(<img src="1494679114133.png" />,<span class="dig">10</span>)
+    <span class="skw">click</span>(Pattern(<img src="1494679145346.png" />).targetOffset(-<span class="dig">94</span>,<span class="dig">206</span>)) <span class="cmt">#click on the image of the part with offset</span>
+    <span class="skw">wait</span>(<img src="1494678049454.png" />, <span class="dig">10</span>) <span class="cmt">#the button to appear can take a while, so wait till it appears</span>
+    <span class="skw">click</span>(<img src="1494678049454.png" />) <span class="cmt">#after you get button test</span>
+    <span class="skw">wait</span>(<img src="1494679250665.png" />, <span class="dig">20</span>)
+    <span class="skw">click</span>(<img src="1494679250665.png" />)
+    <span class="skw">sleep</span>(<span class="dig">0.2</span>)
+    <span class="skw">click</span>(Pattern(<img src="1494679350514.png" />).targetOffset(-<span class="dig">44</span>,<span class="dig">1</span>))
+    <span class="skw">click</span>(Pattern(<img src="1494679385272.png" />).targetOffset(-<span class="dig">122</span>,<span class="dig">0</span>))
     <span class="skw">sleep</span>(<span class="dig">0.3</span>)
-    <span class="skw">click</span>(Pattern(<img src="1493853625672.png" />).targetOffset(-<span class="dig">43</span>,<span class="dig">0</span>))<span class="cmt">#select pathology</span>
-    <span class="skw">sleep</span>(<span class="dig">0.3</span>)
-    <span class="skw">click</span>(Pattern(<img src="1493860166847.png" />).targetOffset(-<span class="dig">126</span>,-<span class="dig">2</span>))
-    <span class="skw">click</span>(<img src="1493853682961.png" />)<span class="cmt">#adjust all to get real info</span>
+    <span class="skw">click</span>(<img src="1494678284242.png" />) <span class="cmt">#adjust all to get real info</span>
 
     <span class="skw">sleep</span>(<span class="dig">3</span>) <span class="cmt">#sleep to give more time to load it TODO: this should later be replaced with better code</span>
-    <span class="skw">click</span>(Pattern(<img src="1493854868280.png" />).targetOffset(<span class="dig">0</span>,<span class="dig">17</span>))<span class="cmt">#click on list</span>
-    <span class="skw">type</span>(Key.DOWN)<span class="cmt">#click down arrow on list to come to subjects</span>
+    <span class="skw">click</span>(Pattern(<img src="1494679484901.png" />).targetOffset(-<span class="dig">3</span>,<span class="dig">54</span>))
+
     <span class="skw">type</span>(Key.DOWN)
-    <span class="skw">type</span>(Key.DOWN)
-    <span class="skw">sleep</span>(<span class="dig">4</span>)
+    <span class="skw">sleep</span>(<span class="dig">0.9</span>)
 
     keyDown(Key.SHIFT)<span class="cmt">#in the windows to select them all press SHIFT and go with arrow down to select them all</span>
-    <span class="kw">if</span> <span class="kw">not</span> exists(<img src="1493927047356.png" />):
+
+    <span class="kw">if</span> <span class="kw">not</span> exists(<img src="1494678447549.png" />):
         <span class="kw">for</span> i <span class="kw">in</span> range(<span class="dig">7</span>):<span class="cmt">#usually there are 90 items TODO: do only ones till 1.5</span>
            <span class="skw">type</span>(Key.DOWN)
            <span class="cmt">#sleep(0.3)</span>
@@ -124,11 +124,13 @@ howMuchOfiemsToTake = <span class="dig">10</span>
 
     <span class="cmt">#sleep(3)</span>
     keyUp(Key.SHIFT)<span class="cmt"># let the shift go, it is already selected</span>
-
-    <span class="skw">click</span>(<img src="1493854906119.png" />)<span class="cmt">#place them all in epicrisis</span>
     <span class="skw">sleep</span>(<span class="dig">0.3</span>)
-    <span class="skw">click</span>(<img src="1493912629787.png" />)
-    <span class="skw">click</span>(<img src="1493912659217.png" />)
+    <span class="skw">click</span>(<img src="1494679909392.png" />) <span class="cmt">#place them all in epicrisis</span>
+    <span class="skw">wait</span>(<img src="1494680307954.png" />, <span class="dig">3</span>)
+    <span class="skw">click</span>(<img src="1494680326464.png" />)
+    <span class="skw">click</span>(<img src="1494678610521.png" />)
+    <span class="skw">wait</span>(<img src="1494680393999.png" />, <span class="dig">3</span>)
+    <span class="skw">click</span>(<img src="1494680393999.png" />)
 </pre>
 </body>
 </html>

@@ -1,0 +1,152 @@
+
+<html>
+   <head>
+      <style type="text/css">
+         .sikuli-code {
+            font-size: 20px;
+            font-family: "Osaka-mono", Monospace;
+            line-height: 1.5em;
+            display:table-cell;
+            white-space: pre-wrap;       /* css-3 */
+            white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+            white-space: -pre-wrap;      /* Opera 4-6 */
+            white-space: -o-pre-wrap;    /* Opera 7 */
+            word-wrap: break-word;       /* Internet Explorer 5.5+ */
+            width: 99%;   /* remove horizontal scroll-bar when viewing in IE7 */
+         }
+         .sikuli-code img {
+            vertical-align: middle;
+            margin: 2px;
+            border: 1px solid #ccc;
+            padding: 2px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-box-shadow: 1px 1px 1px gray;
+            -webkit-box-shadow: 1px 1px 2px gray;
+         }
+         .kw {
+            color: blue;
+         }
+         .skw {
+            color: rgb(63, 127, 127);
+         }
+
+         .str {
+            color: rgb(128, 0, 0);
+         }
+
+         .dig {
+            color: rgb(128, 64, 0);
+         }
+
+         .cmt {
+            color: rgb(200, 0, 200);
+         }
+
+         h2 {
+            display: inline;
+            font-weight: normal;
+         }
+
+         .info {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            display: none;
+         }
+
+         a {
+            color: #9D2900;
+         }
+
+         body {
+            font-family: "Trebuchet MS", Arial, Sans-Serif;
+         }
+
+      </style>
+   </head>
+<body>
+<div class="info">
+<h2>methapia-stone-fyto-meta.sikuli</h2> <a href="methapia-stone-fyto-meta.zip">(Download this script)</a>
+</div>
+<pre class="sikuli-code">
+<span class="cmt">#click("1494363659321.png")</span>
+
+<span class="cmt">#for i in range(9):</span>
+<span class="cmt">#    if exists("1494368870260.png"):</span>
+<span class="cmt">#        click("1494368870260.png")</span>
+<span class="cmt">#        sleep(3)</span>
+<span class="cmt">#on dna and rna level there is no stone therapy</span>
+<span class="cmt">#sleep(20)</span>
+<span class="skw">click</span>(<img src="1494496665247.png" />)
+
+<span class="cmt">#click("1494363684711.png")</span>
+<span class="cmt">#click(Pattern("1494363737993.png").targetOffset(-68,-1))</span>
+<span class="cmt">#for i in range(2):</span>
+<span class="skw">wait</span>(<img src="1494496708347.png" />, <span class="dig">600</span>)
+<span class="skw">click</span>(<img src="1494496708347.png" />)
+<span class="cmt">#wait("1494495917879.png", 600)</span>
+<span class="cmt">#click("1494495917879.png")</span>
+<span class="cmt">#wait("1494365357200.png", 300)</span>
+<span class="cmt">#click("1494365357200.png") </span>
+
+<span class="skw">click</span>(Pattern(<img src="1494363737993.png" />).targetOffset(-<span class="dig">68</span>,-<span class="dig">1</span>))
+count = <span class="dig">0</span>
+<span class="kw">for</span> i <span class="kw">in</span> range(<span class="dig">3</span>):
+    <span class="kw">print</span> count
+    <span class="skw">click</span>(<img src="1494364888480.png" />)
+
+    <span class="kw">if</span> count == <span class="dig">1</span>:
+        <span class="skw">type</span>(Key.DOWN)
+    <span class="skw">wait</span>(<img src="1494363779474.png" />, <span class="dig">30</span>*<span class="dig">60</span>)
+    <span class="skw">click</span>(<img src="1494363779474.png" />)
+
+    <span class="skw">wait</span>(<img src="1494496782216.png" />, <span class="dig">2000</span>)
+
+    <span class="skw">click</span>(<img src="1494496782216.png" />)
+
+    <span class="skw">wait</span>(<img src="1494363924147.png" />, <span class="dig">30</span>*<span class="dig">60</span>)
+    <span class="skw">click</span>(Pattern(<img src="1494363924147.png" />).targetOffset(<span class="dig">46</span>,<span class="dig">28</span>))
+    count = <span class="dig">1</span>
+
+
+<span class="cmt">#wait("1494365357200.png", 30*60)</span>
+<span class="cmt">#click("1494365357200.png") </span>
+<span class="skw">wait</span>(<img src="1494496708347.png" />, <span class="dig">600</span>)
+<span class="skw">click</span>(<img src="1494496708347.png" />)
+
+<span class="skw">click</span>(Pattern(<img src="1494365448806.png" />).targetOffset(-<span class="dig">80</span>,-<span class="dig">1</span>))
+
+
+count = <span class="dig">0</span>
+<span class="kw">for</span> i <span class="kw">in</span> range(<span class="dig">3</span>):
+    <span class="kw">print</span> count
+    <span class="skw">click</span>(<img src="1494364888480.png" />)
+
+    <span class="kw">if</span> count == <span class="dig">1</span>:
+        <span class="skw">type</span>(Key.DOWN)
+    <span class="skw">wait</span>(<img src="1494365200537.png" />, <span class="dig">30</span>*<span class="dig">60</span>)
+
+    <span class="skw">click</span>(<img src="1494365200537.png" />)
+    <span class="skw">wait</span>(<img src="1494496782216.png" />, <span class="dig">2000</span>)
+
+    <span class="skw">click</span>(<img src="1494496782216.png" />)
+    <span class="skw">wait</span>(<img src="1494363924147.png" />, <span class="dig">30</span>*<span class="dig">60</span>)
+    <span class="skw">click</span>(Pattern(<img src="1494363924147.png" />).targetOffset(<span class="dig">46</span>,<span class="dig">28</span>))
+    count = <span class="dig">1</span>
+
+<span class="skw">click</span>(<img src="1494365724204.png" />)
+<span class="skw">wait</span>(<img src="1494365744091.png" />, <span class="dig">30</span>*<span class="dig">60</span>)
+<span class="skw">click</span>(<img src="1494365744091.png" />)
+<span class="skw">wait</span>(<img src="1494497188692.png" />, <span class="dig">300</span>)
+<span class="skw">click</span>(Pattern(<img src="1494497188692.png" />).targetOffset(<span class="dig">64</span>,-<span class="dig">2</span>))
+
+<span class="cmt">#wait(Pattern("1494366439552.png").targetOffset(62,-6), 30*60)</span>
+<span class="cmt">#click(Pattern("1494366439552.png").targetOffset(62,-6))</span>
+
+<span class="cmt">#click("1494365795747.png")#TODO fix there are two of them </span>
+<span class="skw">wait</span>(<img src="1494363924147.png" />, <span class="dig">30</span>*<span class="dig">60</span>)
+<span class="skw">click</span>(Pattern(<img src="1494363924147.png" />).targetOffset(<span class="dig">46</span>,<span class="dig">28</span>))
+</pre>
+</body>
+</html>
